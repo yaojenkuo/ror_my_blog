@@ -2,7 +2,7 @@
 
 ## About
 
-## Articles
+## Posts
 
 ## Courses
 
