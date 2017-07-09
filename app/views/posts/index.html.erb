@@ -1,1 +1,12 @@
 <h1>Posts Index Page</h1>
+
+<% @posts.each do |post| %>
+    <h2><%= link_to post.title, post_path(post) %></h2>
+    <p><%= post.content %></p>
+<% end %>
+
+<br>
+<br>
+<br>
+
+<%= link_to 'New Post', new_post_path %>
