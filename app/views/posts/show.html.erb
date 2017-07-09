@@ -1,7 +1,7 @@
 <p><%= @post.created_at.strftime('%A, %B %d') %></p>
 <h1><%= @post.title %></h1>
 <hr>
-<p><%= @post.content %></p>
+<p><%= markdown @post.content %></p>
 <hr>
 <div class="row">
     <div class="col-md-4 col-md-offset-4 text-center">
