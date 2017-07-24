@@ -1,0 +1,17 @@
+<p><%= @project.created_at.strftime('%A, %B %d') %></p>
+<h1><%= @project.title %></h1>
+<hr>
+<p><%= markdown @project.description %></p>
+<a href="<%= @project.link %>" target="_blank">Visit <%= @project.title %></a>
+<hr>
+<div class="row">
+    <div class="col-md-4 col-md-offset-4 text-center">
+    <!-- Facebook -->
+        <i class="fa fa-facebook"></i>
+    </div>
+</div>
+<br>
+<div class="row">
+    <%= link_to "Edit", edit_project_path(@project) %>
+    <%= link_to "Delete", project_path(@project), method: :delete, data: {confirm: "Are you sure you want to delete this proejct?"} %>
+</div>
