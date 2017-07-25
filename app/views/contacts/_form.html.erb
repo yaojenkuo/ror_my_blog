@@ -1,0 +1,6 @@
+<%= simple_form_for @contact do |f| %>
+  <%= f.input :name %>
+  <%= f.input :email %>
+  <%= f.input :message, :input_html => {:rows => 10}  %>
+  <%= f.button :submit %>
+<% end %>
