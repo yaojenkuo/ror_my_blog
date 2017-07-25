@@ -10,10 +10,15 @@
     </div>
 </div>
 <br>
+
+<% if user_signed_in? %>
+
 <div class="row">
     <%= link_to "Edit", edit_post_path(@post) %>
     <%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure you want to delete this post?"} %>
 </div>
+
+<% end %>
 
 <div class="row">
     <%= render 'disqus' %>

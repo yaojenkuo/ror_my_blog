@@ -5,4 +5,12 @@
     <p><%= project.created_at.strftime('%A, %B %d') %></p>
 <% end %>
 
-<%= link_to 'New Project', new_project_path %>
+<div class="flickr_pagination">
+    <dov class="page_info">
+        <%= will_paginate @projects %>
+    </dov>
+</div>
+
+<% if user_signed_in? %>
+    <%= link_to 'New Project', new_project_path %>
+<% end %>
