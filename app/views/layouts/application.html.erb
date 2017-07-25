@@ -40,9 +40,6 @@
   </div><!-- /.container-fluid -->
 </nav>
     <div class="container">
-      
-    </div>
-    <div class="container">
       <% if notice %>
         <p class="notice"><%= notice %></p>
       <% elsif alert %>
@@ -50,5 +47,11 @@
       <% end %>
       <%= yield %>
     </div>
+
+    <footer class="footer navbar-fixed-bottom">
+      <div class="container">
+        <p class="text-muted">2017 &copy; Yao-Jen Kuo</p>
+      </div>
+    </footer>
   </body>
 </html>
